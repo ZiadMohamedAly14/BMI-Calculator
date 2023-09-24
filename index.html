@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="intro">
+            <h2>BMI Calculator</h2>
+            <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value
+                and corresponding weight status,<br> Body mass index is a value derived from the mass and height
+                of a person.<br> It is defined as the body mass divided by
+                the square of the body height, and is expressed in units of kg/m².</p>
+        </div>
+        <div class="wrapper">
+            <p>Height
+                <input type="text" id="height" placeholder="e.g.180 cm"><br><span id="heightError"></span>
+            </p>
+            <p>Weight
+                <input type="text" id="weight" placeholder="e.g.85 kg"><br><span id="weightError"></span>
+            </p>
+            <button id="btn">Calculate</button>
+            <p id="output"></p>
+        </div>
+        <div class="info">
+            <ul>
+                <li>below 18.5 is underweight</li>
+                <li>between 18.5 and 24.9 is healthy</li>
+                <li>between 25 and 29.9 is overweight</li>
+                <li>of 30 or over is obese</li>
+            </ul>
+        </div>
+    </main>
+    <div class="chart">
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BMI_chart.svg/773px-BMI_chart.svg.png?20191212020742">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
